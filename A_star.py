@@ -27,6 +27,7 @@ class Node:
       return self.F_score < other.F_score
     return False
   
+  # Manhattan distance
   def get_H_score(self, end: Coordinate) -> int:
     return (abs(self.coord[0] - end[0]) + abs(self.coord[1] - end[1])) if self.parent_node is not None else 0
   
